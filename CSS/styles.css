@@ -1,0 +1,558 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #f8f8f8;
+}
+
+body::selection {
+  background-color: #ccc;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+a {
+  color: #222;
+}
+
+h1 {
+  font-size: 2.728rem;
+}
+
+h2 {
+  font-size: 1.44rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3.986rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2.888rem;
+  }
+
+  h3 {
+    font-size: 2.074rem;
+  }
+
+  p {
+    font-size: 1.34rem;
+  }
+
+  span,
+  a {
+    font-size: 1.3rem;
+  }
+}
+
+img {
+  object-fit: cover;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 1rem;
+
+  
+}
+
+.mobile-nav {
+  display: flex;
+}
+
+.center-nav {
+  display: none;
+}
+
+.center-nav a:hover {
+  text-decoration: underline solid;
+  text-decoration-color: black;
+
+}
+
+@media screen and (min-width: 1024px) {
+  .navigation {
+    margin: 2rem 2rem;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .center-nav {
+    display: flex;
+  }
+
+  .center-nav a {
+    margin: 0 0.8rem;
+  }
+}
+
+/* main section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 25vh;
+  margin: 2rem 1rem;
+  gap: 0.5rem;
+}
+
+.hero-description {
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-photograph img {
+  object-fit: cover;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-section {
+    margin: 2rem 2rem;
+    gap: 1rem;
+  }
+
+  .hero-photograph img {
+    width: 60rem;
+    height: 40em;
+  }
+}
+/* Mission section */
+.mission-section {
+  display: flex;
+  justify-content: flex-start;
+  background-image: url(../Images/image\ 1\ \(10\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  height:20vh;
+}
+
+.mission-description h2,
+.mission-description p {
+  color: #fff;
+  opacity: 1.85;
+  text-align: center;
+}
+
+  .mission-description p {
+    font-size: 1.55rem;
+    margin: 0.5rem;
+  }
+
+
+@media screen and (min-width: 1024px) {
+  .mission-section {
+    height: 50vh;
+  }
+  .mission-description p {
+    margin: 0 2rem;
+    font-size:large;
+  }
+}
+
+/*Get Agent*/
+.get-agent-section {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.get-agent-section .agent-header {
+  margin-bottom: 20px;
+}
+
+.get-agent-section .agent-header h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.get-agent-section .agent-search {
+  margin-bottom: 20px;
+}
+
+.get-agent-section .agent-search form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-agent-section .agent-search input[type="text"] {
+  width: 50%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.get-agent-section .agent-search button {
+  width: 20%;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.get-agent-section .agent-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.get-agent-section .agent-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.get-agent-section .agent-list li {
+  width: 78%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  
+}
+
+
+.get-agent-section .agent-list li img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.get-agent-section .agent-list li h3 {
+  font-size: 1.55rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.get-agent-section .agent-list li p {
+  font-size:1.2rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .get-agent-section .agent-list li {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .get-agent-section .agent-list li {
+    width: 100%;
+  }
+}
+
+/* Services Page  */
+.hero-projects {
+  display: grid;
+  flex-direction: column;
+  margin: 2.5rem 1rem;
+  text-align: center;
+}
+
+.service-header {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+
+}
+ 
+
+/* Project Buildings */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    grid-auto-flow: row dense;
+    width: 100%;
+    gap: 5px;
+}
+
+.item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 8rem;
+    height: 6rem;
+    border-radius: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .item {
+    width: 40rem;
+    height: 30rem;
+  }
+}
+
+.item-1 {
+    background-image: url(../Images/138a1838b3731a9b69236eff272828d44e6414d8.jpg);
+}
+
+.item-2 {
+    background-image: url(../Images/1912_BDF114717_IMG_01_0000.jpeg);
+}
+
+.item-3 {
+    background-image: url(../Images/image\ 1\ \(8\).jpg);
+}
+
+.item-4 {
+    background-image: url(../Images/image\ 1\ \(12\).jpg);
+}
+
+.item-5 {
+    background-image: url(../Images/image\ 1\ \(13\).jpg);
+}
+
+.item-6 {
+    background-image: url(../Images/image\ 1\ \(1\).jpg);
+}
+
+.item-8 {
+    background-image: url(../Images/image\ 1\ \(4\).jpg);
+}
+
+.item-9 {
+    background-image: url(../Images/image\ 1\ \(7\).jpg);
+}
+
+.item-10 {
+    background-image: url(../Images/image\ 1\ \(6\).jpg);
+}
+
+.item-11 {
+    background-image: url(../Images/image\ 1\ \(3\).jpg);
+}
+
+.item-7 {
+    background-image: url(../Images/4517_29905166_IMG_01_0000.jpg);
+}
+
+
+.hero-listings {
+  margin:  5rem;
+}
+
+/* Contact us */
+.hero-contact {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+}
+.hero-contact {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+  
+}
+
+.contact-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #455261;
+    border-radius: 5px;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .hero-contact {
+    margin: 5rem 5rem;
+  
+    
+  }
+}
+
+.contact-me {
+  width: 50vw;
+}
+
+.mailman img {
+  object-fit: cover;
+  width: 20rem;
+  height: 30rem;
+  position: fixed;
+}
+
+.hero-contact input {
+  margin: .3rem 0;
+}
+
+button {
+  display: block;
+}
+
+
+
+/* Footer Styles */
+.hero-footer {
+  background-color: #323232;
+  padding: 20px;
+  text-align: center;
+  box-shadow: #333;
+  border-radius: 1rem;
+}
+
+.contact-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #f8f8f8;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+  color: #f8f8f8;
+}
+
+.contact-info li {
+  margin: 5px 0;
+  
+}
+
+.contact-info li i {
+  margin-right: 10px;
+}
+
+.rights {
+  font-size: 0.8em;
+  color: #ffffff;
+}
+
+.brand {
+  font-size: 1.2em;
+  font-weight: bold;
+  
+}
+
+.social {
+  font-size: 1.5em;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.social i {
+  margin: 0 10px;
+  color: #f8f8f8;
+}
+
