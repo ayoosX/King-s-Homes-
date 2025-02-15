@@ -14,21 +14,22 @@
   </head>
   <body>
     <!-- navigation section -->
-    <section class="navigation">
-      <article class="hero-title">
-        <a href="#" title="Real Estate Agency">Casa de blanca villa</a>
-      </article>
-      <article class="center-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Services</a>
-        <a href="#contact">Contact</a>
-        <a href="#agent">Get Agent</a>
-      </article>
-      <article class="mobile-nav">
-        <a href="" class="fa-solid fa-bars"></a>
-      </article>
-    </section>
+  <section class="navigation">
+<!-- Top Navigation Menu -->
+    <div class="topnav">
+     <a href="#home" class="active">Casa de blanca villa</a>
+       <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+   </section>
     <!-- Main Section -->
     <section id="home" class="hero-section">
       <article class="hero-description">
@@ -183,10 +184,6 @@
                 <button type="submit" class="submit-button">Send Message</button>
             </form>
         </div>
-
-        <article class="mailman">
-          <img src="./Images/mail man .svg" alt="Mail Man" />
-        </article>
       </section>
 
 <!-- Footer pageclass -->
@@ -194,7 +191,7 @@
   <div class="contact-info">
     <h3>Contact Details</h3>
     <ul>
-      <li><i ="fas fa-map-marker-alt"></i> 123 Casa De Blanca, Easte Legon Hills , Accra</li>
+      <li><i class="fa-map-marker-alt"></i> 123 Casa De Blanca, Easte Legon Hills , Accra</li>
       <li><i class="fas fa-phone"></i> +233 599589341</li>
       <li><i class="fas fa-envelope"></i> info@casadeblanca.com</li>
     </ul>
@@ -208,5 +205,28 @@
     <i class="fa-brands fa-twitter"></i>
       </article>
     </section>
+    <script>
+      function myFunction() {
+       var x = document.getElementById("myLinks");
+       if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+        x.style.display = "block";
+       }
+      }
+
+
+
+
+      // function openMenu() {
+      //  var mobileMenu = document.getElementById("mobile-menu");
+      //  if (mobileMenu.style.display === "none") {
+      //  mobileMenu.style.display = "block";
+      //   } else {
+      //   mobileMenu.style.display = "none";
+      //   }
+      // }
+    </script>
+
   </body>
 </html>
